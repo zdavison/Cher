@@ -19,6 +19,8 @@ Cher.url("http://cherlove.net/links.htm").via(FacebookFlow()).subscribeError({
 )
 ```
 
+`Flow`s for Facebook and Twitter using `SLComposeViewController` are implemented for you.
+
 Cher also supports sharing via `Destination`, which will share without UI. This assumes you've prepared everything necessary.
 
 ```swift
