@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cher/Cher.swift"
+            timestampString = "456788295.138306"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "to(_:using:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cher.Item.to (Cher.Item)(Cher.Destination, using : Cher.Interface) -&gt; ObjectiveC.RACSignal"
+                  moduleName = "Cher"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thingsdoer/contract/adaptics/Cher/Cher/Cher.swift"
+                  timestampString = "456788344.546892"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "135">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cher.Item.(to (Cher.Item) -&gt; (Cher.Destination, using : Cher.Interface) -&gt; ObjectiveC.RACSignal).(closure #1)"
+                  moduleName = "Cher"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thingsdoer/contract/adaptics/Cher/Cher/Cher.swift"
+                  timestampString = "456788344.54715"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cher/Cher.swift"
+            timestampString = "456787302.20366"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cher/Cher.swift"
+            timestampString = "456788341.87754"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "to(_:using:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cher.Item.(to (Cher.Item) -&gt; (Cher.Destination, using : Cher.Interface) -&gt; ObjectiveC.RACSignal).(closure #1)"
+                  moduleName = "Cher"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thingsdoer/contract/adaptics/Cher/Cher/Cher.swift"
+                  timestampString = "456788344.547391"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cher.Item.(to (Cher.Item) -&gt; (Cher.Destination, using : Cher.Interface) -&gt; ObjectiveC.RACSignal).(closure #1).(implicit closure #1)"
+                  moduleName = "Cher"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thingsdoer/contract/adaptics/Cher/Cher/Cher.swift"
+                  timestampString = "456788344.547661"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CherTests/FacebookIntegration.swift"
+            timestampString = "456835828.028189"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "spec()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CherTests/FacebookIntegration.swift"
+            timestampString = "456836130.156139"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "spec()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CherTests/Cher+NativeTests.swift"
+            timestampString = "456840197.315265"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "spec()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CherTests.CherNativeSpec.(spec (CherTests.CherNativeSpec) -&gt; () -&gt; ()).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "CherTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thingsdoer/contract/adaptics/Cher/CherTests/Cher+NativeTests.swift"
+                  timestampString = "456836231.941934"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1668">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CherTests.CherNativeSpec.(spec (CherTests.CherNativeSpec) -&gt; () -&gt; ()).(closure #1).(closure #1).(closure #1).(implicit closure #1)"
+                  moduleName = "CherTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thingsdoer/contract/adaptics/Cher/CherTests/Cher+NativeTests.swift"
+                  timestampString = "456836231.942162"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CherTests/Cher+NativeTests.swift"
+            timestampString = "456840197.315265"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "spec()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CherTests.CherNativeSpec.(spec (CherTests.CherNativeSpec) -&gt; () -&gt; ()).(closure #1).(closure #1).(closure #2)"
+                  moduleName = "CherTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thingsdoer/contract/adaptics/Cher/CherTests/Cher+NativeTests.swift"
+                  timestampString = "456836234.743721"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "43">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CherTests.CherNativeSpec.(spec (CherTests.CherNativeSpec) -&gt; () -&gt; ()).(closure #1).(closure #1).(closure #2).(implicit closure #1)"
+                  moduleName = "CherTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thingsdoer/contract/adaptics/Cher/CherTests/Cher+NativeTests.swift"
+                  timestampString = "456836234.745764"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CherTests/Cher+NativeTests.swift"
+            timestampString = "456840194.643423"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "spec()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
