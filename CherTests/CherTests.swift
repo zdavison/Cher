@@ -31,7 +31,7 @@ class CherSpec : QuickSpec {
         
         it("should return a signal that completes on successful share"){
           var completed: Bool?
-          Cher.url("http://cher.test.com").via(SucceedingFlow()).subscribeCompleted{
+          Cher.url("http://cherlove.net").via(SucceedingFlow()).subscribeCompleted{
             completed = true
           }
           expect(completed).toEventually(equal(true))
@@ -39,7 +39,7 @@ class CherSpec : QuickSpec {
   
         it("should return a signal that errors on cancelled / failed share"){
           var error: NSError?
-          Cher.url("http://cher.test.com").via(CancellingFlow()).subscribeError{
+          Cher.url("http://cherlove.net").via(CancellingFlow()).subscribeError{
             error = $0
           }
           expect(error).toEventuallyNot(beNil())
@@ -71,7 +71,7 @@ class CherSpec : QuickSpec {
         
         it("a destination should perform its share"){
           var completed = false
-          Cher.url("http://cher.test.com").to(ItemDestination()).subscribeCompleted{
+          Cher.url("http://cherlove.net").to(ItemDestination()).subscribeCompleted{
             Void -> Void in
             completed = true
           }
@@ -88,7 +88,7 @@ class CherSpec : QuickSpec {
         
         it("an interface/destination pair can perform a share"){
           var completed = false
-          Cher.url("http://cher.test.com").to(StringDestination(), using: StringReturningInterface())
+          Cher.url("http://cherlove.net").to(StringDestination(), using: StringReturningInterface())
             .subscribeCompleted{
             completed = true
           }

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Pinterest.h"
 
 //! Project version number for Cher.
 FOUNDATION_EXPORT double CherVersionNumber;
