@@ -29,13 +29,12 @@ public class Facebook : Native {
   private class func _requestFromInput(input: Input) -> SLRequest {
     
     var parameters = Parameters()
-    switch(input){
-    case .URL(let url):
+    
+    if let url = input.URLs.first{
       parameters["link"] = url.absoluteString
-    case .Text(let text):
+    }
+    if let text = input.text{
       parameters["message"] = text
-    default:
-      break
     }
     
     return SLRequest(
@@ -65,13 +64,8 @@ public class Twitter : Native {
   private class func _requestFromInput(input: Input) -> SLRequest {
     
     var parameters = Parameters()
-    switch(input){
-    case .URL(let url):
-      parameters["status"] = url.absoluteString
-    case .Text(let text):
-      parameters["status"] = text
-    default:
-      break
+    if let text = input.text{
+      parameters["message"] = text
     }
     
     return SLRequest(
@@ -175,12 +169,10 @@ public class NativeFlow : Flow {
       let topViewController = UIApplication.sharedApplication().keyWindow?.rootViewController
       
       // Configure the composeViewController
-      switch(item){
-      case .Text(let string):
-        composeViewController.setInitialText(string)
-      case .URL(let url):
-        composeViewController.addURL(url)
-      case .Image(let image):
+      if let text = item.text {
+        composeViewController.setInitialText(text)
+      }
+      if let image = item.image {
         composeViewController.addImage(image)
       }
       

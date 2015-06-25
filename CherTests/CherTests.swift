@@ -11,6 +11,21 @@ import Quick
 import Nimble
 import ReactiveCocoa
 
+class ItemSpec : QuickSpec {
+  override func spec(){
+    describe("Item"){
+      it("should be able to parse URLs from text on initialization"){
+        let item = Item(text: "wow, http://cherlove.net is a great website")
+        expect(item.URLs.first).to(equal(NSURL(string: "http://cherlove.net")))
+      }
+      it("should return an empty array if no URLs are present"){
+        let item = Item(text: "wow, cher is great")
+        expect(item.URLs.count).to(equal(0))
+      }
+    }
+  }
+}
+
 class CherSpec : QuickSpec {
   override func spec() {
     describe("Cher top level API"){
@@ -80,7 +95,7 @@ class CherSpec : QuickSpec {
         
         it("an interface can mutate an Item into an Output type"){
           var output: String?
-          StringReturningInterface().present(Item.Text(string: "")).subscribeNext{
+          StringReturningInterface().present(Item(text: "")).subscribeNext{
             output = $0 as? String
           }
           expect(output).toEventually(equal("i believe in love after love"))

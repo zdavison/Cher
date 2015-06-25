@@ -9,12 +9,41 @@
 import Foundation
 import ReactiveCocoa
 
+private extension String {
+  func findURLs() -> [NSURL] {
+    var error: NSError?
+    let dataDetector = NSDataDetector(types: NSTextCheckingType.Link.rawValue, error: &error)
+    let results = dataDetector?.matchesInString(
+      self,
+      options: NSMatchingOptions.allZeros,
+      range: NSMakeRange(0, count(self))
+    )
+    
+    if let e = error{
+      return []
+    }
+    
+    let textCheckingResults = results as! [NSTextCheckingResult]
+    
+    return textCheckingResults.map{
+      let substring = NSString(string: self).substringWithRange($0.range)
+      return NSURL(string: substring)!
+    }
+  }
+}
+
 //MARK: Item
-public enum Item {
+public class Item {
   
-  case URL(URL: NSURL)
-  case Text(string: String)
-  case Image(image: UIImage)
+  public let text:       String?
+  public let image:      UIImage?
+  public let URLs:       [NSURL]
+  
+  public init(text: String? = nil, image: UIImage? = nil){
+    self.text  = text
+    self.image = image
+    self.URLs  = text?.findURLs() ?? []
+  }
   
   public func via(flow: Flow) -> RACSignal {
     return flow.share(self)
@@ -56,12 +85,12 @@ public protocol Flow {
 //MARK: Cher
 public class Cher {
   public class func url(urlString: String) -> Item {
-    return Item.URL(URL: NSURL(string: urlString)!)
+    return Item(text: urlString)
   }
   public class func text(text: String) -> Item {
-    return Item.Text(string: text)
+    return Item(text: text)
   }
   public class func image(image: UIImage) -> Item {
-    return Item.Image(image: image)
+    return Item(text: nil, image: image)
   }
 }
