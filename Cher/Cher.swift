@@ -15,6 +15,7 @@ internal enum ErrorCode : Int{
   case BadData   = 400
   case User      = 418
   case NotFound  = 404
+  case Unknown   = 666
 }
 
 private extension String {
@@ -57,6 +58,9 @@ public class Item {
 // MARK: Flow
 public protocol Flow {
   typealias Input
+  
+  static func available() -> Bool
+  
   func share(item: Input) -> RACSignal // Completed | Error
 }
 

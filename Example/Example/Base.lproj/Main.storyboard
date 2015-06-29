@@ -16,12 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="528"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BY9-yK-qF3">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BY9-yK-qF3">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.035294117649999998" green="0.50196078430000002" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="tWW-4U-ol1"/>
+                                    <constraint firstAttribute="height" constant="44" id="BNS-2y-KR2"/>
                                 </constraints>
                                 <state key="normal" title="Share Text On Facebook">
                                     <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,24 +29,24 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="tWW-4U-ol1"/>
+                                        <exclude reference="BNS-2y-KR2"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
-                                        <include reference="tWW-4U-ol1"/>
+                                        <include reference="BNS-2y-KR2"/>
                                     </mask>
                                 </variation>
                                 <connections>
                                     <action selector="shareTextOnFacebook" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j8y-tJ-GzN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjR-2T-jwg">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjR-2T-jwg">
                                 <rect key="frame" x="0.0" y="44" width="600" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.035294117649999998" green="0.50196078430000002" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="6AR-bu-RF0"/>
+                                    <constraint firstAttribute="height" constant="44" id="jy4-oJ-0XJ"/>
                                 </constraints>
                                 <state key="normal" title="Share URL On Facebook">
                                     <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,24 +54,24 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="6AR-bu-RF0"/>
+                                        <exclude reference="jy4-oJ-0XJ"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
-                                        <include reference="6AR-bu-RF0"/>
+                                        <include reference="jy4-oJ-0XJ"/>
                                     </mask>
                                 </variation>
                                 <connections>
                                     <action selector="shareURLOnFacebook" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Q0-tv-axE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OL-eq-4XR">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OL-eq-4XR">
                                 <rect key="frame" x="0.0" y="88" width="600" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.035294117649999998" green="0.50196078430000002" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Fbv-ud-Mfx"/>
+                                    <constraint firstAttribute="height" constant="44" id="1vv-o7-MGh"/>
                                 </constraints>
                                 <state key="normal" title="Share Image On Facebook">
                                     <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,24 +79,24 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="Fbv-ud-Mfx"/>
+                                        <exclude reference="1vv-o7-MGh"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
-                                        <include reference="Fbv-ud-Mfx"/>
+                                        <include reference="1vv-o7-MGh"/>
                                     </mask>
                                 </variation>
                                 <connections>
                                     <action selector="shareImageOnFacebook" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sgX-3U-vOS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eo5-hO-X8y">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eo5-hO-X8y">
                                 <rect key="frame" x="0.0" y="132" width="600" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.70196078429999997" green="0.1058823529" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Og4-2A-ziN"/>
+                                    <constraint firstAttribute="height" constant="44" id="oUy-8P-U4S"/>
                                 </constraints>
                                 <state key="normal" title="Share Text On Twitter">
                                     <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,24 +104,24 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="Og4-2A-ziN"/>
+                                        <exclude reference="oUy-8P-U4S"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
-                                        <include reference="Og4-2A-ziN"/>
+                                        <include reference="oUy-8P-U4S"/>
                                     </mask>
                                 </variation>
                                 <connections>
                                     <action selector="shareTextOnTwitter" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L8K-Qv-2D0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY2-1y-Epa">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY2-1y-Epa">
                                 <rect key="frame" x="0.0" y="176" width="600" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.70196078429999997" green="0.1058823529" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="jBo-Dq-aSD"/>
+                                    <constraint firstAttribute="height" constant="44" id="acX-07-tGE"/>
                                 </constraints>
                                 <state key="normal" title="Share URL On Twitter">
                                     <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -129,24 +129,24 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="jBo-Dq-aSD"/>
+                                        <exclude reference="acX-07-tGE"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
-                                        <include reference="jBo-Dq-aSD"/>
+                                        <include reference="acX-07-tGE"/>
                                     </mask>
                                 </variation>
                                 <connections>
                                     <action selector="shareURLOnTwitter" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RQJ-Vq-PH5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMz-a2-YoH">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMz-a2-YoH">
                                 <rect key="frame" x="0.0" y="220" width="600" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.70196078429999997" green="0.1058823529" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="YNo-ux-uLg"/>
+                                    <constraint firstAttribute="height" constant="44" id="w4E-SQ-It9"/>
                                 </constraints>
                                 <state key="normal" title="Share Image On Twitter">
                                     <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -154,24 +154,24 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="YNo-ux-uLg"/>
+                                        <exclude reference="w4E-SQ-It9"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
-                                        <include reference="YNo-ux-uLg"/>
+                                        <include reference="w4E-SQ-It9"/>
                                     </mask>
                                 </variation>
                                 <connections>
                                     <action selector="shareImageOnTwitter" destination="vXZ-lx-hvc" eventType="touchUpInside" id="O2D-pW-XHf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZ8-q6-8gf">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZ8-q6-8gf">
                                 <rect key="frame" x="0.0" y="352" width="600" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.49803921569999998" green="0.2784313725" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="z7m-nn-iMc"/>
+                                    <constraint firstAttribute="height" constant="44" id="zgM-EX-G1Y"/>
                                 </constraints>
                                 <state key="normal" title="Share Image On Pinterest">
                                     <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -179,19 +179,44 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="z7m-nn-iMc"/>
+                                        <exclude reference="zgM-EX-G1Y"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
-                                        <include reference="z7m-nn-iMc"/>
+                                        <include reference="zgM-EX-G1Y"/>
                                     </mask>
                                 </variation>
                                 <connections>
                                     <action selector="shareImageOnPinterest" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wpM-9g-hbu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDc-Mm-vAX">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJC-pR-NXf">
+                                <rect key="frame" x="0.0" y="352" width="600" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.49803921569999998" green="0.76680715460526316" blue="0.86666666669999992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="lSG-jp-CZE"/>
+                                </constraints>
+                                <state key="normal" title="Share Text Via Email">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lSG-jp-CZE"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="lSG-jp-CZE"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="shareTextViaEmail:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dud-xm-pQb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDc-Mm-vAX">
                                 <rect key="frame" x="0.0" y="484" width="600" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.55294117649999996" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -207,88 +232,103 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nMz-a2-YoH" firstAttribute="trailing" secondItem="UZ8-q6-8gf" secondAttribute="trailing" id="07f-dA-Uy7"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KDc-Mm-vAX" secondAttribute="bottom" constant="176" id="0ZC-Hp-Jhc"/>
-                            <constraint firstItem="UZ8-q6-8gf" firstAttribute="top" secondItem="nMz-a2-YoH" secondAttribute="bottom" id="10O-eu-4lj"/>
-                            <constraint firstItem="KY2-1y-Epa" firstAttribute="trailing" secondItem="Eo5-hO-X8y" secondAttribute="trailing" id="7sa-Mf-XxQ"/>
-                            <constraint firstItem="Eo5-hO-X8y" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="A4B-Mg-z5w"/>
-                            <constraint firstItem="7OL-eq-4XR" firstAttribute="top" secondItem="AjR-2T-jwg" secondAttribute="bottom" id="AVv-35-Vlc"/>
-                            <constraint firstItem="AjR-2T-jwg" firstAttribute="leading" secondItem="7OL-eq-4XR" secondAttribute="leading" id="E0W-1C-9q5"/>
-                            <constraint firstItem="KDc-Mm-vAX" firstAttribute="trailing" secondItem="UZ8-q6-8gf" secondAttribute="trailing" id="Jg1-0k-1ap"/>
-                            <constraint firstItem="nMz-a2-YoH" firstAttribute="leading" secondItem="KY2-1y-Epa" secondAttribute="leading" id="OUp-g5-tFt"/>
-                            <constraint firstItem="KY2-1y-Epa" firstAttribute="top" secondItem="Eo5-hO-X8y" secondAttribute="bottom" id="On6-sq-Hyx"/>
-                            <constraint firstItem="Eo5-hO-X8y" firstAttribute="top" secondItem="7OL-eq-4XR" secondAttribute="bottom" id="Wf2-bJ-nqv"/>
-                            <constraint firstItem="KDc-Mm-vAX" firstAttribute="top" secondItem="UZ8-q6-8gf" secondAttribute="bottom" id="cSa-go-UB7"/>
-                            <constraint firstItem="AjR-2T-jwg" firstAttribute="top" secondItem="BY9-yK-qF3" secondAttribute="bottom" id="cfa-y4-K5h"/>
-                            <constraint firstItem="Eo5-hO-X8y" firstAttribute="trailing" secondItem="7OL-eq-4XR" secondAttribute="trailing" id="cw0-oK-ENY"/>
-                            <constraint firstItem="nMz-a2-YoH" firstAttribute="top" secondItem="KY2-1y-Epa" secondAttribute="bottom" id="eBo-Kc-cno"/>
-                            <constraint firstItem="Eo5-hO-X8y" firstAttribute="leading" secondItem="KY2-1y-Epa" secondAttribute="leading" id="gF9-To-IVy"/>
-                            <constraint firstItem="BY9-yK-qF3" firstAttribute="trailing" secondItem="AjR-2T-jwg" secondAttribute="trailing" id="gwY-zU-KZn"/>
-                            <constraint firstAttribute="trailing" secondItem="7OL-eq-4XR" secondAttribute="trailing" id="mDl-pX-whT"/>
-                            <constraint firstItem="7OL-eq-4XR" firstAttribute="leading" secondItem="Eo5-hO-X8y" secondAttribute="leading" id="mj6-9d-I8v"/>
-                            <constraint firstItem="nMz-a2-YoH" firstAttribute="leading" secondItem="UZ8-q6-8gf" secondAttribute="leading" id="oal-mb-gAs"/>
-                            <constraint firstItem="nMz-a2-YoH" firstAttribute="trailing" secondItem="KY2-1y-Epa" secondAttribute="trailing" id="pkw-gX-IQn"/>
-                            <constraint firstItem="KDc-Mm-vAX" firstAttribute="leading" secondItem="UZ8-q6-8gf" secondAttribute="leading" id="qiG-O9-1gv"/>
-                            <constraint firstItem="AjR-2T-jwg" firstAttribute="leading" secondItem="BY9-yK-qF3" secondAttribute="leading" id="scZ-z5-vqn"/>
-                            <constraint firstItem="BY9-yK-qF3" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="tv0-cR-a3F"/>
-                            <constraint firstItem="7OL-eq-4XR" firstAttribute="trailing" secondItem="AjR-2T-jwg" secondAttribute="trailing" id="zKY-js-hgh"/>
+                            <constraint firstItem="7OL-eq-4XR" firstAttribute="top" secondItem="AjR-2T-jwg" secondAttribute="bottom" id="1a3-P5-YkC"/>
+                            <constraint firstItem="7OL-eq-4XR" firstAttribute="leading" secondItem="Eo5-hO-X8y" secondAttribute="leading" id="1bz-VT-sgm"/>
+                            <constraint firstItem="KDc-Mm-vAX" firstAttribute="top" secondItem="UZ8-q6-8gf" secondAttribute="bottom" id="1y8-3q-cQj"/>
+                            <constraint firstItem="nMz-a2-YoH" firstAttribute="trailing" secondItem="BJC-pR-NXf" secondAttribute="trailing" id="6DS-PU-0re"/>
+                            <constraint firstItem="Eo5-hO-X8y" firstAttribute="top" secondItem="7OL-eq-4XR" secondAttribute="bottom" id="9u0-lQ-pqd"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KDc-Mm-vAX" secondAttribute="bottom" constant="132" id="Cm4-sW-RFy"/>
+                            <constraint firstItem="nMz-a2-YoH" firstAttribute="leading" secondItem="KY2-1y-Epa" secondAttribute="leading" id="CsI-56-AyJ"/>
+                            <constraint firstItem="KY2-1y-Epa" firstAttribute="trailing" secondItem="nMz-a2-YoH" secondAttribute="trailing" id="DCp-Wv-4SU"/>
+                            <constraint firstItem="UZ8-q6-8gf" firstAttribute="top" secondItem="BJC-pR-NXf" secondAttribute="bottom" id="G7a-5k-7Ty"/>
+                            <constraint firstItem="nMz-a2-YoH" firstAttribute="top" secondItem="KY2-1y-Epa" secondAttribute="bottom" id="LvN-pi-cU4"/>
+                            <constraint firstItem="BY9-yK-qF3" firstAttribute="leading" secondItem="AjR-2T-jwg" secondAttribute="leading" id="Owc-a3-B5O"/>
+                            <constraint firstItem="7OL-eq-4XR" firstAttribute="trailing" secondItem="AjR-2T-jwg" secondAttribute="trailing" id="Sxi-WK-dDB"/>
+                            <constraint firstItem="BY9-yK-qF3" firstAttribute="trailing" secondItem="AjR-2T-jwg" secondAttribute="trailing" id="Wpu-O2-d4e"/>
+                            <constraint firstItem="BY9-yK-qF3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ZgS-0z-VkP"/>
+                            <constraint firstItem="BY9-yK-qF3" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="cs8-PW-V4N"/>
+                            <constraint firstItem="7OL-eq-4XR" firstAttribute="trailing" secondItem="Eo5-hO-X8y" secondAttribute="trailing" id="dRz-4l-tig"/>
+                            <constraint firstItem="KY2-1y-Epa" firstAttribute="leading" secondItem="Eo5-hO-X8y" secondAttribute="leading" id="ddy-ck-JPI"/>
+                            <constraint firstItem="KY2-1y-Epa" firstAttribute="trailing" secondItem="Eo5-hO-X8y" secondAttribute="trailing" id="e1N-Dt-gQ8"/>
+                            <constraint firstItem="KY2-1y-Epa" firstAttribute="top" secondItem="Eo5-hO-X8y" secondAttribute="bottom" id="f8Z-Rv-mJU"/>
+                            <constraint firstItem="BJC-pR-NXf" firstAttribute="leading" secondItem="UZ8-q6-8gf" secondAttribute="leading" id="gsS-fY-ufT"/>
+                            <constraint firstItem="AjR-2T-jwg" firstAttribute="top" secondItem="BY9-yK-qF3" secondAttribute="bottom" id="hPh-JA-tOc"/>
+                            <constraint firstItem="7OL-eq-4XR" firstAttribute="leading" secondItem="AjR-2T-jwg" secondAttribute="leading" id="lbS-hP-Y5r"/>
+                            <constraint firstItem="UZ8-q6-8gf" firstAttribute="leading" secondItem="KDc-Mm-vAX" secondAttribute="leading" id="mfm-Cf-5Gt"/>
+                            <constraint firstItem="UZ8-q6-8gf" firstAttribute="trailing" secondItem="BJC-pR-NXf" secondAttribute="trailing" id="nEj-EE-vJ7"/>
+                            <constraint firstItem="UZ8-q6-8gf" firstAttribute="trailing" secondItem="KDc-Mm-vAX" secondAttribute="trailing" id="pbU-Pq-oG2"/>
+                            <constraint firstItem="nMz-a2-YoH" firstAttribute="leading" secondItem="BJC-pR-NXf" secondAttribute="leading" id="vX0-Kw-kii"/>
+                            <constraint firstAttribute="trailing" secondItem="KDc-Mm-vAX" secondAttribute="trailing" id="w0M-QU-G27"/>
+                            <constraint firstItem="BJC-pR-NXf" firstAttribute="top" secondItem="nMz-a2-YoH" secondAttribute="bottom" id="xCj-24-ZbM"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="BJC-pR-NXf"/>
+                            </mask>
                             <mask key="constraints">
-                                <exclude reference="gwY-zU-KZn"/>
-                                <exclude reference="tv0-cR-a3F"/>
-                                <exclude reference="E0W-1C-9q5"/>
-                                <exclude reference="cfa-y4-K5h"/>
-                                <exclude reference="scZ-z5-vqn"/>
-                                <exclude reference="AVv-35-Vlc"/>
-                                <exclude reference="mDl-pX-whT"/>
-                                <exclude reference="mj6-9d-I8v"/>
-                                <exclude reference="zKY-js-hgh"/>
-                                <exclude reference="A4B-Mg-z5w"/>
-                                <exclude reference="Wf2-bJ-nqv"/>
-                                <exclude reference="cw0-oK-ENY"/>
-                                <exclude reference="gF9-To-IVy"/>
-                                <exclude reference="7sa-Mf-XxQ"/>
-                                <exclude reference="On6-sq-Hyx"/>
-                                <exclude reference="07f-dA-Uy7"/>
-                                <exclude reference="OUp-g5-tFt"/>
-                                <exclude reference="eBo-Kc-cno"/>
-                                <exclude reference="oal-mb-gAs"/>
-                                <exclude reference="pkw-gX-IQn"/>
-                                <exclude reference="10O-eu-4lj"/>
-                                <exclude reference="Jg1-0k-1ap"/>
-                                <exclude reference="cSa-go-UB7"/>
-                                <exclude reference="qiG-O9-1gv"/>
-                                <exclude reference="0ZC-Hp-Jhc"/>
+                                <exclude reference="Owc-a3-B5O"/>
+                                <exclude reference="Wpu-O2-d4e"/>
+                                <exclude reference="ZgS-0z-VkP"/>
+                                <exclude reference="cs8-PW-V4N"/>
+                                <exclude reference="hPh-JA-tOc"/>
+                                <exclude reference="1a3-P5-YkC"/>
+                                <exclude reference="1bz-VT-sgm"/>
+                                <exclude reference="Sxi-WK-dDB"/>
+                                <exclude reference="dRz-4l-tig"/>
+                                <exclude reference="lbS-hP-Y5r"/>
+                                <exclude reference="9u0-lQ-pqd"/>
+                                <exclude reference="DCp-Wv-4SU"/>
+                                <exclude reference="ddy-ck-JPI"/>
+                                <exclude reference="e1N-Dt-gQ8"/>
+                                <exclude reference="f8Z-Rv-mJU"/>
+                                <exclude reference="6DS-PU-0re"/>
+                                <exclude reference="CsI-56-AyJ"/>
+                                <exclude reference="LvN-pi-cU4"/>
+                                <exclude reference="vX0-Kw-kii"/>
+                                <exclude reference="gsS-fY-ufT"/>
+                                <exclude reference="xCj-24-ZbM"/>
+                                <exclude reference="G7a-5k-7Ty"/>
+                                <exclude reference="mfm-Cf-5Gt"/>
+                                <exclude reference="nEj-EE-vJ7"/>
+                                <exclude reference="pbU-Pq-oG2"/>
+                                <exclude reference="1y8-3q-cQj"/>
+                                <exclude reference="w0M-QU-G27"/>
+                                <exclude reference="Cm4-sW-RFy"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="BJC-pR-NXf"/>
+                            </mask>
                             <mask key="constraints">
-                                <include reference="gwY-zU-KZn"/>
-                                <include reference="tv0-cR-a3F"/>
-                                <include reference="E0W-1C-9q5"/>
-                                <include reference="cfa-y4-K5h"/>
-                                <include reference="scZ-z5-vqn"/>
-                                <include reference="AVv-35-Vlc"/>
-                                <include reference="mDl-pX-whT"/>
-                                <include reference="mj6-9d-I8v"/>
-                                <include reference="zKY-js-hgh"/>
-                                <include reference="A4B-Mg-z5w"/>
-                                <include reference="Wf2-bJ-nqv"/>
-                                <include reference="cw0-oK-ENY"/>
-                                <include reference="gF9-To-IVy"/>
-                                <include reference="7sa-Mf-XxQ"/>
-                                <include reference="On6-sq-Hyx"/>
-                                <include reference="07f-dA-Uy7"/>
-                                <include reference="OUp-g5-tFt"/>
-                                <include reference="eBo-Kc-cno"/>
-                                <include reference="oal-mb-gAs"/>
-                                <include reference="pkw-gX-IQn"/>
-                                <include reference="10O-eu-4lj"/>
-                                <include reference="Jg1-0k-1ap"/>
-                                <include reference="cSa-go-UB7"/>
-                                <include reference="qiG-O9-1gv"/>
-                                <include reference="0ZC-Hp-Jhc"/>
+                                <include reference="Owc-a3-B5O"/>
+                                <include reference="Wpu-O2-d4e"/>
+                                <include reference="ZgS-0z-VkP"/>
+                                <include reference="cs8-PW-V4N"/>
+                                <include reference="hPh-JA-tOc"/>
+                                <include reference="1a3-P5-YkC"/>
+                                <include reference="1bz-VT-sgm"/>
+                                <include reference="Sxi-WK-dDB"/>
+                                <include reference="dRz-4l-tig"/>
+                                <include reference="lbS-hP-Y5r"/>
+                                <include reference="9u0-lQ-pqd"/>
+                                <include reference="DCp-Wv-4SU"/>
+                                <include reference="ddy-ck-JPI"/>
+                                <include reference="e1N-Dt-gQ8"/>
+                                <include reference="f8Z-Rv-mJU"/>
+                                <include reference="6DS-PU-0re"/>
+                                <include reference="CsI-56-AyJ"/>
+                                <include reference="LvN-pi-cU4"/>
+                                <include reference="vX0-Kw-kii"/>
+                                <include reference="gsS-fY-ufT"/>
+                                <include reference="xCj-24-ZbM"/>
+                                <include reference="G7a-5k-7Ty"/>
+                                <include reference="mfm-Cf-5Gt"/>
+                                <include reference="nEj-EE-vJ7"/>
+                                <include reference="pbU-Pq-oG2"/>
+                                <include reference="1y8-3q-cQj"/>
+                                <include reference="w0M-QU-G27"/>
+                                <include reference="Cm4-sW-RFy"/>
                             </mask>
                         </variation>
                     </view>

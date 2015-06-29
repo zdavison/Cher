@@ -32,6 +32,10 @@ public class TwitterFlow : NativeFlow {
 // MARK: Native
 public class NativeFlow : Flow {
   
+  public static func available() -> Bool {
+    return true
+  }
+  
   private let _composeViewController: SLComposeViewController
   
   private init(serviceType: String){
@@ -45,8 +49,6 @@ public class NativeFlow : Flow {
     
     return RACSignal.createSignal({
       (subscriber: RACSubscriber!) -> RACDisposable! in
-      
-      var rootViewController = UIApplication.sharedApplication().keyWindow?.rootViewController
       
       // Configure the composeViewController
       if let text = item.text {
@@ -72,7 +74,7 @@ public class NativeFlow : Flow {
       }
       
       // Present
-      rootViewController?.presentViewControllerFromVisibleViewController(composeViewController, animated: true, completion: nil)
+      composeViewController.present()
       
       return RACDisposable(){
         composeViewController.parentViewController?.dismissViewControllerAnimated(true, completion: nil)

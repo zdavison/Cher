@@ -26,10 +26,20 @@ public class InstagramFlow : NSObject, Flow {
   
   typealias Input = Item
   
-  let sender: UIControl
+  private static var _currentInstance: InstagramFlow?
+  
+  private let _subject                        = RACSubject()
+  private let _sender                         : UIControl
+  private var _documentInteractionController  : UIDocumentInteractionController?
   
   public init(sender: UIControl){
-    self.sender = sender
+    self._sender = sender
+    super.init()
+    InstagramFlow._currentInstance = self // This never gets de-allocated because we dont have a good place to do so. Kinda crummy.
+  }
+  
+  public static func available() -> Bool {
+    return true
   }
   
   public func share(item: Item) -> RACSignal {
@@ -39,27 +49,27 @@ public class InstagramFlow : NSObject, Flow {
       return RACSignal.error(error)
     }
     
-    return RACSignal.createSignal{
-      (subscriber) in
-      
-      let disposable = RACDisposable()
-      
-      let url = _saveImage(item.image!)!
-      let documentInteractionController = UIDocumentInteractionController()
-      documentInteractionController.URL = url
-      documentInteractionController.UTI = "com.instagram.photo"
-      if let text = item.text {
-        documentInteractionController.annotation = ["InstagramCaption" : text]
-      }
-      
-      let frame  = self.sender.superview!.convertRect(self.sender.bounds, toView: nil)
-      documentInteractionController.presentOpenInMenuFromRect(frame, inView: self.sender.superview!, animated: true)
-      
-      // TODO: We should be using delegate callbacks to do this (so we can detect cancellation), but we're deallocated before the delegate calls back.
-      subscriber.sendCompleted()
-      
-      return disposable
+    let url = _saveImage(item.image!)!
+    let documentInteractionController = UIDocumentInteractionController()
+    documentInteractionController.delegate = self
+    documentInteractionController.URL = url
+    documentInteractionController.UTI = "com.instagram.photo"
+    if let text = item.text {
+      documentInteractionController.annotation = ["InstagramCaption" : text]
     }
-    .replayLast()
+    
+    let frame  = self._sender.superview!.convertRect(self._sender.bounds, toView: nil)
+    documentInteractionController.presentOpenInMenuFromRect(frame, inView: self._sender.superview!, animated: true)
+    
+    // Need to hold onto this or it'll get de-allocated and we'll crash out
+    self._documentInteractionController = documentInteractionController
+    
+    return _subject
+  }
+}
+
+extension InstagramFlow : UIDocumentInteractionControllerDelegate {
+  public func documentInteractionController(controller: UIDocumentInteractionController, willBeginSendingToApplication application: String) {
+    _subject.sendCompleted()
   }
 }

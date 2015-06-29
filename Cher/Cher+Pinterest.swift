@@ -29,6 +29,10 @@ public class PinterestFlow : Flow {
     self._pinterest = Pinterest(clientId_fixed: clientID)
   }
   
+  public static func available() -> Bool {
+    return true
+  }
+  
   public func share(item: PinterestItem) -> RACSignal {
     
     return RACSignal.createSignal{

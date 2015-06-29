@@ -77,6 +77,16 @@ class ViewController: UIViewController {
       NSLog("Share completed.")
     })
   }
+  
+  // Email
+  @IBAction func shareTextViaEmail(sender: UIButton){
+    Cher.text("i believe in love after love", via: EmailFlow()).subscribeError({
+      NSLog("Error: \($0)")
+      },
+      completed: {
+        NSLog("Share completed.")
+    })
+  }
 
 }
 

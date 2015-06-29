@@ -10,6 +10,11 @@ import Foundation
 
 extension UIViewController {
   
+  func present(){
+    let rootViewController = UIApplication.sharedApplication().keyWindow?.rootViewController
+    rootViewController?.presentViewControllerFromVisibleViewController(self, animated: true, completion: nil)
+  }
+  
   func presentViewControllerFromVisibleViewController(viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)?) {
     NSLog("\(self)")
     if let navigationController = self as? UINavigationController {
