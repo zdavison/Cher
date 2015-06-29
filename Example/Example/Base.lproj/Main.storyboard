@@ -13,121 +13,287 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="528"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygq-QU-ZcF">
-                                <rect key="frame" x="189" y="149" width="222" height="63"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.035294117649999998" green="0.50196078430000002" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="oIP-mp-gLt"/>
-                                </constraints>
-                                <state key="normal" title="Share URL On Twitter">
-                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareURLOnTwitter" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SJM-Gg-j4H"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BY9-yK-qF3">
-                                <rect key="frame" x="189" y="78" width="222" height="63"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.035294117649999998" green="0.50196078430000002" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="BzK-p0-SJl"/>
-                                    <constraint firstAttribute="width" constant="222" id="mKT-zf-zlv"/>
-                                </constraints>
-                                <state key="normal" title="Share URL On Facebook">
-                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareURLOnFacebook" destination="vXZ-lx-hvc" eventType="touchUpInside" id="evZ-fV-9Wn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijM-iO-Fpa">
-                                <rect key="frame" x="189" y="459" width="222" height="63"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.70196078429999997" green="0.1058823529" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Share Image On Twitter">
-                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareImageOnTwitter" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kXn-C3-zT2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEz-HL-maH">
-                                <rect key="frame" x="189" y="388" width="222" height="63"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.70196078429999997" green="0.1058823529" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="ABC-jp-ryg"/>
-                                </constraints>
-                                <state key="normal" title="Share Image On Facebook">
-                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareImageOnFacebook" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OGY-aU-Yni"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avM-rU-Dr8">
-                                <rect key="frame" x="189" y="304" width="222" height="63"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.55294117649999996" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="PDn-pF-zDS"/>
-                                </constraints>
-                                <state key="normal" title="Share Text On Twitter">
-                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareTextOnTwitter" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FBT-mp-w5K"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tl-y5-F7h">
-                                <rect key="frame" x="189" y="233" width="222" height="63"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.55294117649999996" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="Bva-xJ-IAb"/>
+                                    <constraint firstAttribute="height" constant="44" id="tWW-4U-ol1"/>
                                 </constraints>
                                 <state key="normal" title="Share Text On Facebook">
                                     <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tWW-4U-ol1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="tWW-4U-ol1"/>
+                                    </mask>
+                                </variation>
                                 <connections>
-                                    <action selector="shareTextOnFacebook" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MGk-ed-Lyn"/>
+                                    <action selector="shareTextOnFacebook" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j8y-tJ-GzN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjR-2T-jwg">
+                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.50196078430000002" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6AR-bu-RF0"/>
+                                </constraints>
+                                <state key="normal" title="Share URL On Facebook">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6AR-bu-RF0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="6AR-bu-RF0"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="shareURLOnFacebook" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Q0-tv-axE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OL-eq-4XR">
+                                <rect key="frame" x="0.0" y="88" width="600" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.50196078430000002" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Fbv-ud-Mfx"/>
+                                </constraints>
+                                <state key="normal" title="Share Image On Facebook">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Fbv-ud-Mfx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Fbv-ud-Mfx"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="shareImageOnFacebook" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sgX-3U-vOS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eo5-hO-X8y">
+                                <rect key="frame" x="0.0" y="132" width="600" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.70196078429999997" green="0.1058823529" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Og4-2A-ziN"/>
+                                </constraints>
+                                <state key="normal" title="Share Text On Twitter">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Og4-2A-ziN"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Og4-2A-ziN"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="shareTextOnTwitter" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L8K-Qv-2D0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY2-1y-Epa">
+                                <rect key="frame" x="0.0" y="176" width="600" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.70196078429999997" green="0.1058823529" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jBo-Dq-aSD"/>
+                                </constraints>
+                                <state key="normal" title="Share URL On Twitter">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jBo-Dq-aSD"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="jBo-Dq-aSD"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="shareURLOnTwitter" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RQJ-Vq-PH5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMz-a2-YoH">
+                                <rect key="frame" x="0.0" y="220" width="600" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.70196078429999997" green="0.1058823529" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="YNo-ux-uLg"/>
+                                </constraints>
+                                <state key="normal" title="Share Image On Twitter">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YNo-ux-uLg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="YNo-ux-uLg"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="shareImageOnTwitter" destination="vXZ-lx-hvc" eventType="touchUpInside" id="O2D-pW-XHf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZ8-q6-8gf">
+                                <rect key="frame" x="0.0" y="352" width="600" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.49803921569999998" green="0.2784313725" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="z7m-nn-iMc"/>
+                                </constraints>
+                                <state key="normal" title="Share Image On Pinterest">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="z7m-nn-iMc"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="z7m-nn-iMc"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="shareImageOnPinterest" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wpM-9g-hbu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDc-Mm-vAX">
+                                <rect key="frame" x="0.0" y="484" width="600" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.55294117649999996" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Share Image On Instagram">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareImageOnInstagram:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uFG-Z6-oQi"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ijM-iO-Fpa" firstAttribute="leading" secondItem="uEz-HL-maH" secondAttribute="leading" id="0ko-9Y-NQu"/>
-                            <constraint firstItem="7tl-y5-F7h" firstAttribute="leading" secondItem="avM-rU-Dr8" secondAttribute="leading" id="3iu-Na-htn"/>
-                            <constraint firstItem="uEz-HL-maH" firstAttribute="top" secondItem="avM-rU-Dr8" secondAttribute="bottom" constant="21" id="51D-5e-1UW"/>
-                            <constraint firstItem="BY9-yK-qF3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="58" id="B9A-qQ-HXE"/>
-                            <constraint firstItem="avM-rU-Dr8" firstAttribute="trailing" secondItem="uEz-HL-maH" secondAttribute="trailing" id="Dwb-7U-ad8"/>
-                            <constraint firstItem="Ygq-QU-ZcF" firstAttribute="leading" secondItem="BY9-yK-qF3" secondAttribute="leading" id="IyB-Uj-WcT"/>
-                            <constraint firstItem="ijM-iO-Fpa" firstAttribute="top" secondItem="uEz-HL-maH" secondAttribute="bottom" constant="8" symbolic="YES" id="ONb-rB-hPq"/>
-                            <constraint firstItem="BY9-yK-qF3" firstAttribute="trailing" secondItem="Ygq-QU-ZcF" secondAttribute="trailing" id="Ur0-xh-VjW"/>
-                            <constraint firstItem="Ygq-QU-ZcF" firstAttribute="top" secondItem="BY9-yK-qF3" secondAttribute="bottom" constant="8" symbolic="YES" id="b69-f6-b3W"/>
-                            <constraint firstItem="ijM-iO-Fpa" firstAttribute="trailing" secondItem="uEz-HL-maH" secondAttribute="trailing" id="cdY-EO-Ttf"/>
-                            <constraint firstItem="uEz-HL-maH" firstAttribute="leading" secondItem="avM-rU-Dr8" secondAttribute="leading" id="iLw-UL-xdO"/>
-                            <constraint firstItem="7tl-y5-F7h" firstAttribute="trailing" secondItem="avM-rU-Dr8" secondAttribute="trailing" id="pes-nE-tHE"/>
-                            <constraint firstItem="Ygq-QU-ZcF" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="rBY-ik-ldf"/>
-                            <constraint firstItem="7tl-y5-F7h" firstAttribute="leading" secondItem="Ygq-QU-ZcF" secondAttribute="leading" id="uay-t1-nDs"/>
-                            <constraint firstItem="7tl-y5-F7h" firstAttribute="top" secondItem="Ygq-QU-ZcF" secondAttribute="bottom" constant="21" id="uhR-XC-ATI"/>
-                            <constraint firstItem="avM-rU-Dr8" firstAttribute="top" secondItem="7tl-y5-F7h" secondAttribute="bottom" constant="8" symbolic="YES" id="xKq-Xh-007"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ijM-iO-Fpa" secondAttribute="bottom" constant="78" id="y1P-hT-Mz1"/>
-                            <constraint firstItem="Ygq-QU-ZcF" firstAttribute="trailing" secondItem="7tl-y5-F7h" secondAttribute="trailing" id="z7Q-dM-arx"/>
+                            <constraint firstItem="nMz-a2-YoH" firstAttribute="trailing" secondItem="UZ8-q6-8gf" secondAttribute="trailing" id="07f-dA-Uy7"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KDc-Mm-vAX" secondAttribute="bottom" constant="176" id="0ZC-Hp-Jhc"/>
+                            <constraint firstItem="UZ8-q6-8gf" firstAttribute="top" secondItem="nMz-a2-YoH" secondAttribute="bottom" id="10O-eu-4lj"/>
+                            <constraint firstItem="KY2-1y-Epa" firstAttribute="trailing" secondItem="Eo5-hO-X8y" secondAttribute="trailing" id="7sa-Mf-XxQ"/>
+                            <constraint firstItem="Eo5-hO-X8y" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="A4B-Mg-z5w"/>
+                            <constraint firstItem="7OL-eq-4XR" firstAttribute="top" secondItem="AjR-2T-jwg" secondAttribute="bottom" id="AVv-35-Vlc"/>
+                            <constraint firstItem="AjR-2T-jwg" firstAttribute="leading" secondItem="7OL-eq-4XR" secondAttribute="leading" id="E0W-1C-9q5"/>
+                            <constraint firstItem="KDc-Mm-vAX" firstAttribute="trailing" secondItem="UZ8-q6-8gf" secondAttribute="trailing" id="Jg1-0k-1ap"/>
+                            <constraint firstItem="nMz-a2-YoH" firstAttribute="leading" secondItem="KY2-1y-Epa" secondAttribute="leading" id="OUp-g5-tFt"/>
+                            <constraint firstItem="KY2-1y-Epa" firstAttribute="top" secondItem="Eo5-hO-X8y" secondAttribute="bottom" id="On6-sq-Hyx"/>
+                            <constraint firstItem="Eo5-hO-X8y" firstAttribute="top" secondItem="7OL-eq-4XR" secondAttribute="bottom" id="Wf2-bJ-nqv"/>
+                            <constraint firstItem="KDc-Mm-vAX" firstAttribute="top" secondItem="UZ8-q6-8gf" secondAttribute="bottom" id="cSa-go-UB7"/>
+                            <constraint firstItem="AjR-2T-jwg" firstAttribute="top" secondItem="BY9-yK-qF3" secondAttribute="bottom" id="cfa-y4-K5h"/>
+                            <constraint firstItem="Eo5-hO-X8y" firstAttribute="trailing" secondItem="7OL-eq-4XR" secondAttribute="trailing" id="cw0-oK-ENY"/>
+                            <constraint firstItem="nMz-a2-YoH" firstAttribute="top" secondItem="KY2-1y-Epa" secondAttribute="bottom" id="eBo-Kc-cno"/>
+                            <constraint firstItem="Eo5-hO-X8y" firstAttribute="leading" secondItem="KY2-1y-Epa" secondAttribute="leading" id="gF9-To-IVy"/>
+                            <constraint firstItem="BY9-yK-qF3" firstAttribute="trailing" secondItem="AjR-2T-jwg" secondAttribute="trailing" id="gwY-zU-KZn"/>
+                            <constraint firstAttribute="trailing" secondItem="7OL-eq-4XR" secondAttribute="trailing" id="mDl-pX-whT"/>
+                            <constraint firstItem="7OL-eq-4XR" firstAttribute="leading" secondItem="Eo5-hO-X8y" secondAttribute="leading" id="mj6-9d-I8v"/>
+                            <constraint firstItem="nMz-a2-YoH" firstAttribute="leading" secondItem="UZ8-q6-8gf" secondAttribute="leading" id="oal-mb-gAs"/>
+                            <constraint firstItem="nMz-a2-YoH" firstAttribute="trailing" secondItem="KY2-1y-Epa" secondAttribute="trailing" id="pkw-gX-IQn"/>
+                            <constraint firstItem="KDc-Mm-vAX" firstAttribute="leading" secondItem="UZ8-q6-8gf" secondAttribute="leading" id="qiG-O9-1gv"/>
+                            <constraint firstItem="AjR-2T-jwg" firstAttribute="leading" secondItem="BY9-yK-qF3" secondAttribute="leading" id="scZ-z5-vqn"/>
+                            <constraint firstItem="BY9-yK-qF3" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="tv0-cR-a3F"/>
+                            <constraint firstItem="7OL-eq-4XR" firstAttribute="trailing" secondItem="AjR-2T-jwg" secondAttribute="trailing" id="zKY-js-hgh"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gwY-zU-KZn"/>
+                                <exclude reference="tv0-cR-a3F"/>
+                                <exclude reference="E0W-1C-9q5"/>
+                                <exclude reference="cfa-y4-K5h"/>
+                                <exclude reference="scZ-z5-vqn"/>
+                                <exclude reference="AVv-35-Vlc"/>
+                                <exclude reference="mDl-pX-whT"/>
+                                <exclude reference="mj6-9d-I8v"/>
+                                <exclude reference="zKY-js-hgh"/>
+                                <exclude reference="A4B-Mg-z5w"/>
+                                <exclude reference="Wf2-bJ-nqv"/>
+                                <exclude reference="cw0-oK-ENY"/>
+                                <exclude reference="gF9-To-IVy"/>
+                                <exclude reference="7sa-Mf-XxQ"/>
+                                <exclude reference="On6-sq-Hyx"/>
+                                <exclude reference="07f-dA-Uy7"/>
+                                <exclude reference="OUp-g5-tFt"/>
+                                <exclude reference="eBo-Kc-cno"/>
+                                <exclude reference="oal-mb-gAs"/>
+                                <exclude reference="pkw-gX-IQn"/>
+                                <exclude reference="10O-eu-4lj"/>
+                                <exclude reference="Jg1-0k-1ap"/>
+                                <exclude reference="cSa-go-UB7"/>
+                                <exclude reference="qiG-O9-1gv"/>
+                                <exclude reference="0ZC-Hp-Jhc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="gwY-zU-KZn"/>
+                                <include reference="tv0-cR-a3F"/>
+                                <include reference="E0W-1C-9q5"/>
+                                <include reference="cfa-y4-K5h"/>
+                                <include reference="scZ-z5-vqn"/>
+                                <include reference="AVv-35-Vlc"/>
+                                <include reference="mDl-pX-whT"/>
+                                <include reference="mj6-9d-I8v"/>
+                                <include reference="zKY-js-hgh"/>
+                                <include reference="A4B-Mg-z5w"/>
+                                <include reference="Wf2-bJ-nqv"/>
+                                <include reference="cw0-oK-ENY"/>
+                                <include reference="gF9-To-IVy"/>
+                                <include reference="7sa-Mf-XxQ"/>
+                                <include reference="On6-sq-Hyx"/>
+                                <include reference="07f-dA-Uy7"/>
+                                <include reference="OUp-g5-tFt"/>
+                                <include reference="eBo-Kc-cno"/>
+                                <include reference="oal-mb-gAs"/>
+                                <include reference="pkw-gX-IQn"/>
+                                <include reference="10O-eu-4lj"/>
+                                <include reference="Jg1-0k-1ap"/>
+                                <include reference="cSa-go-UB7"/>
+                                <include reference="qiG-O9-1gv"/>
+                                <include reference="0ZC-Hp-Jhc"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="528"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

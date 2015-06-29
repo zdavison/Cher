@@ -11,39 +11,72 @@ import Cher
 import Social
 
 class ViewController: UIViewController {
-
-  @IBAction func shareURLOnFacebook(){
-    Cher.url("http://cherlove.net").via(FacebookFlow()).subscribeCompleted{
-      NSLog("Share completed.")
-    }
-  }
   
-  @IBAction func shareURLOnTwitter(){
-    Cher.url("http://cherlove.net").via(TwitterFlow()).subscribeCompleted{
-      NSLog("Share completed.")
-    }
-  }
+  // Facebook
   
   @IBAction func shareTextOnFacebook(){
-    Cher.text("i believe in love after love").via(FacebookFlow()).subscribeCompleted{
+    Cher.url("i believe in love after love", via: FacebookFlow()).subscribeCompleted{
       NSLog("Share completed.")
     }
   }
-  
-  @IBAction func shareTextOnTwitter(){
-    Cher.text("i believe in love after love").via(TwitterFlow()).subscribeCompleted{
+
+  @IBAction func shareURLOnFacebook(){
+    Cher.url("http://cherlove.net", via: FacebookFlow()).subscribeCompleted{
       NSLog("Share completed.")
     }
   }
   
   @IBAction func shareImageOnFacebook(){
-    let previewComposeViewController = PreviewComposeServiceViewController()
-    previewComposeViewController.attachment = NSURL(string: "http://placekitten.com")
-    self.presentViewController(previewComposeViewController, animated: true, completion: nil)
+    let image = UIImage(named: "cher.jpg")!
+    Cher.image(image, via: FacebookFlow()).subscribeCompleted{
+      NSLog("Share completed.")
+    }
+  }
+  
+  // Twitter
+  
+  @IBAction func shareTextOnTwitter(){
+    Cher.url("i believe in love after love", via: FacebookFlow()).subscribeCompleted{
+      NSLog("Share completed.")
+    }
+  }
+  
+  @IBAction func shareURLOnTwitter(){
+    Cher.url("http://cherlove.net", via: FacebookFlow()).subscribeCompleted{
+      NSLog("Share completed.")
+    }
   }
   
   @IBAction func shareImageOnTwitter(){
-
+    let image = UIImage(named: "cher.jpg")!
+    Cher.image(image, via: FacebookFlow()).subscribeCompleted{
+      NSLog("Share completed.")
+    }
   }
+  
+  @IBAction func shareImageOnPinterest(){
+    let pinterest = PinterestFlow(clientID: "1445992")
+    
+    let item = PinterestItem(
+      text: "i believe in love after love",
+      imageURLString: "http://static.idolator.com/uploads/2014/01/31/cher-dressed-to-kill-tour-600x450.jpg",
+      sourceURLString: "http://cherlove.net")
+    
+    Cher.item(item, via: pinterest).subscribeCompleted{
+      NSLog("Share completed.")
+    }
+  }
+  
+  // Instagram
+  @IBAction func shareImageOnInstagram(sender:UIButton){
+    let image = UIImage(named: "cher.jpg")!
+    Cher.image(image, via: InstagramFlow(sender: sender)).subscribeError({
+      NSLog("Error: \($0)")
+    },
+    completed: {
+      NSLog("Share completed.")
+    })
+  }
+
 }
 

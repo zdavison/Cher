@@ -16,6 +16,7 @@
 		870253071B3AE529009CDB15 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 870252FD1B3AE50A009CDB15 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		870253091B3AE52E009CDB15 /* Cher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870252F71B3AE2F5009CDB15 /* Cher.framework */; };
 		8702530A1B3AE52E009CDB15 /* Cher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 870252F71B3AE2F5009CDB15 /* Cher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		87F774DB1B3D601E00B5EB78 /* cher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87F774DA1B3D601E00B5EB78 /* cher.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		870252FD1B3AE50A009CDB15 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 		870252FE1B3AE50A009CDB15 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
 		870252FF1B3AE50A009CDB15 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
+		87F774DA1B3D601E00B5EB78 /* cher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cher.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		870252CE1B3AE2AF009CDB15 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				87F774DA1B3D601E00B5EB78 /* cher.jpg */,
 				870252D11B3AE2AF009CDB15 /* AppDelegate.swift */,
 				870252D31B3AE2AF009CDB15 /* ViewController.swift */,
 				870252D51B3AE2AF009CDB15 /* Main.storyboard */,
@@ -251,6 +254,7 @@
 			files = (
 				870252D71B3AE2AF009CDB15 /* Main.storyboard in Resources */,
 				870252DC1B3AE2AF009CDB15 /* LaunchScreen.xib in Resources */,
+				87F774DB1B3D601E00B5EB78 /* cher.jpg in Resources */,
 				870252D91B3AE2AF009CDB15 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,8 +396,10 @@
 					/Users/thingsdoer/contract/adaptics/Cher/Carthage/Build/iOS,
 				);
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -406,8 +412,10 @@
 					/Users/thingsdoer/contract/adaptics/Cher/Carthage/Build/iOS,
 				);
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -9,25 +9,32 @@
 import Foundation
 import ReactiveCocoa
 
+public class PinterestItem : Item {
+  
+  public let imageURL:  NSURL
+  public let sourceURL: NSURL
+  
+  public init(text: String?, imageURLString: String, sourceURLString: String) {
+    self.imageURL  = NSURL(string: imageURLString)!
+    self.sourceURL = NSURL(string: sourceURLString)!
+    super.init(text: text, image: nil)
+  }
+}
+
 public class PinterestFlow : Flow {
   
   private let _pinterest: Pinterest
   
   public init(clientID: String){
-    self._pinterest = Pinterest(clientId: clientID)
+    self._pinterest = Pinterest(clientId_fixed: clientID)
   }
   
-  public func share(item: Item) -> RACSignal {
-    
-    if(_pinterest.canPinWithSDK() == false){
-      let error = NSError(domain: "com.drop.cher.pinterest.unavailable", code: 404, userInfo: nil)
-      return RACSignal.error(error)
-    }
+  public func share(item: PinterestItem) -> RACSignal {
     
     _pinterest.createPinWithImageURL(
-      NSURL(string: "http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg"),
-      sourceURL: NSURL(string: "http://getdrop.com"),
-      description: "test")
+      item.imageURL,
+      sourceURL: item.sourceURL,
+      description: item.text)
     
     return RACSignal.empty()
   }

@@ -10,109 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cher/Cher.swift"
-            timestampString = "456934891.606609"
+            timestampString = "457009805.081704"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "to(_:using:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "findURLs()"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cher.Item.to (Cher.Item)(Cher.Destination, using : Cher.Interface) -&gt; ObjectiveC.RACSignal"
-                  moduleName = "Cher"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thingsdoer/contract/adaptics/Cher/Cher/Cher.swift"
-                  timestampString = "456788344.546892"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "135">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cher.Item.(to (Cher.Item) -&gt; (Cher.Destination, using : Cher.Interface) -&gt; ObjectiveC.RACSignal).(closure #1)"
-                  moduleName = "Cher"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thingsdoer/contract/adaptics/Cher/Cher/Cher.swift"
-                  timestampString = "456788344.54715"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "27">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cher/Cher.swift"
-            timestampString = "456934891.606609"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "Item"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cher/Cher.swift"
-            timestampString = "456934891.606609"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "to(_:using:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cher.Item.(to (Cher.Item) -&gt; (Cher.Destination, using : Cher.Interface) -&gt; ObjectiveC.RACSignal).(closure #1)"
-                  moduleName = "Cher"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thingsdoer/contract/adaptics/Cher/Cher/Cher.swift"
-                  timestampString = "456788344.547391"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "27">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cher.Item.(to (Cher.Item) -&gt; (Cher.Destination, using : Cher.Interface) -&gt; ObjectiveC.RACSignal).(closure #1).(implicit closure #1)"
-                  moduleName = "Cher"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thingsdoer/contract/adaptics/Cher/Cher/Cher.swift"
-                  timestampString = "456788344.547661"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

@@ -28,7 +28,7 @@ private extension UIView {
 
 // MARK: - UIImage + Resizing
 private extension UIImage {
-  private func imageWithSize(size: CGSize) -> UIImage{
+  private func squareImageWithSize(size: CGSize) -> UIImage{
     
     let maxEdge  = max(self.size.width, self.size.height)
     let cropRect = CGRectMake(0, 0, maxEdge, maxEdge)
@@ -75,7 +75,7 @@ internal class WebThumbnail : NSObject {
           let t = $0 as! RACTuple
           let webView = t.first as! UIWebView
           let image   = webView.render()
-          let scaled = image.imageWithSize(self.size)
+          let scaled = image.squareImageWithSize(self.size)
           return scaled
         }
         .doNext{

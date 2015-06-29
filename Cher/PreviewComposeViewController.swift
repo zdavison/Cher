@@ -13,12 +13,20 @@ import MobileCoreServices
 
 // MARK: UIView + Find
 private extension UIView{
-  func find(className: String) -> UIView? {
+  func first(className: String) -> UIView? {
     if NSStringFromClass(self.dynamicType) == className { return self }
     for subview in self.subviews as! [UIView]{
-      if let found = subview.find(className) { return found }
+      if let found = subview.first(className) { return found }
     }
     return nil
+  }
+  
+  func find(className: String, var reduce: [UIView] = []) -> [UIView] {
+    if NSStringFromClass(self.dynamicType) == className { reduce.append(self) }
+    for subview in self.subviews as! [UIView]{
+      reduce += subview.find(className)
+    }
+    return reduce
   }
 }
 
@@ -62,17 +70,52 @@ extension NSURL : Previewable {
   }
 }
 
+extension UIImage : Previewable {
+  public func loadPreview(size: CGSize) -> RACSignal {
+    return RACSignal.rac_return(self) //TODO: This should respect the size!
+  }
+}
+
 // MARK: - PreviewComposeServiceViewController
 public class PreviewComposeServiceViewController : SLComposeServiceViewController {
   
-  public var attachment: Previewable?
-  public var imageView:  UIImageView?
+  public var attachment:    Previewable?
+  public var imageView:     UIImageView?
+  public var cancelHandler: (Void -> Void)?
+  public var postHandler:   (Void -> Void)?
+  public var text: String?{
+    get {
+      if let view = textView { return textView.text        }
+      else                   { return _temporaryTextStore  }
+    }
+    set {
+      if let view = textView { textView.text       = newValue }
+      else                   { _temporaryTextStore = newValue }
+    }
+  }
   
+  private var _temporaryTextStore:    String? // Used if text is set before view is loaded
+  private var _originalBarButtonItem: UIBarButtonItem?
   private let kImageViewSize = CGSizeMake(70, 70)
+  
+  public override func viewDidLoad() {
+    textView.text = _temporaryTextStore
+  }
+  
+  public override func didSelectCancel() {
+    cancelHandler?()
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  public func _didSelectPost() {
+    postHandler?()
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
   
   public override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
-    if let contentView = view.find("SLSheetContentView"){
+    
+    if let contentView = view.first("SLSheetContentView"){
     
       textView.textContainerInset.right = 68
       

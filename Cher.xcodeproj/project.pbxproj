@@ -13,6 +13,9 @@
 		870253741B3B0531009CDB15 /* Pinterest.h in Headers */ = {isa = PBXBuildFile; fileRef = 870253731B3B0531009CDB15 /* Pinterest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8702537C1B3B0F88009CDB15 /* PreviewComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702537A1B3B0EB3009CDB15 /* PreviewComposeViewController.swift */; };
 		8718F3621B3C23760080BA71 /* WebThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718F3611B3C23760080BA71 /* WebThumbnail.swift */; };
+		8718F3661B3C4A260080BA71 /* Cher+Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718F3651B3C4A260080BA71 /* Cher+Instagram.swift */; };
+		8754659C1B3D72A8009F9A14 /* Pinterest+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = 8754659B1B3D72A8009F9A14 /* Pinterest+Fix.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8754659E1B3D73B0009F9A14 /* Pinterest+Fix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8754659D1B3D72BD009F9A14 /* Pinterest+Fix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87D0B7461B39A1550093F509 /* Cher.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D0B7451B39A1550093F509 /* Cher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87D0B74C1B39A1550093F509 /* Cher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D0B7401B39A1550093F509 /* Cher.framework */; };
 		87D0B7531B39A1550093F509 /* CherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B7521B39A1550093F509 /* CherTests.swift */; };
@@ -60,6 +63,11 @@
 		870253731B3B0531009CDB15 /* Pinterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pinterest.h; path = Pinterest.embeddedframework/Pinterest.framework/Versions/A/Headers/Pinterest.h; sourceTree = "<group>"; };
 		8702537A1B3B0EB3009CDB15 /* PreviewComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewComposeViewController.swift; sourceTree = "<group>"; };
 		8718F3611B3C23760080BA71 /* WebThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebThumbnail.swift; sourceTree = "<group>"; };
+		8718F3651B3C4A260080BA71 /* Cher+Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cher+Instagram.swift"; sourceTree = "<group>"; };
+		8754659B1B3D72A8009F9A14 /* Pinterest+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pinterest+Fix.m"; sourceTree = "<group>"; };
+		8754659D1B3D72BD009F9A14 /* Pinterest+Fix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pinterest+Fix.h"; sourceTree = "<group>"; };
+		8754659F1B3D90AE009F9A14 /* Cher+Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cher+Destination.swift"; sourceTree = "<group>"; };
+		875465A31B3D9239009F9A14 /* CherDisabledTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CherDisabledTests.swift; sourceTree = "<group>"; };
 		87D0B7401B39A1550093F509 /* Cher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D0B7441B39A1550093F509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87D0B7451B39A1550093F509 /* Cher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cher.h; sourceTree = "<group>"; };
@@ -101,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				870253731B3B0531009CDB15 /* Pinterest.h */,
+				8754659D1B3D72BD009F9A14 /* Pinterest+Fix.h */,
+				8754659B1B3D72A8009F9A14 /* Pinterest+Fix.m */,
 				8702536B1B3B0374009CDB15 /* Pinterest.embeddedframework */,
 			);
 			path = Vendor;
@@ -158,8 +168,10 @@
 				870253791B3B0E88009CDB15 /* UI */,
 				87D0B7451B39A1550093F509 /* Cher.h */,
 				87D0B7651B39A4E70093F509 /* Cher.swift */,
+				8754659F1B3D90AE009F9A14 /* Cher+Destination.swift */,
 				87D0B76A1B39BE2D0093F509 /* Cher+Native.swift */,
 				8702530E1B3AF015009CDB15 /* Cher+Pinterest.swift */,
+				8718F3651B3C4A260080BA71 /* Cher+Instagram.swift */,
 				87D0B7731B39D2050093F509 /* RAC+Swift.swift */,
 				87D0B7431B39A1550093F509 /* Supporting Files */,
 			);
@@ -178,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				87D0B7521B39A1550093F509 /* CherTests.swift */,
+				875465A31B3D9239009F9A14 /* CherDisabledTests.swift */,
 				87D0B7501B39A1550093F509 /* Supporting Files */,
 			);
 			path = CherTests;
@@ -226,6 +239,7 @@
 			files = (
 				87D0B7461B39A1550093F509 /* Cher.h in Headers */,
 				870253741B3B0531009CDB15 /* Pinterest.h in Headers */,
+				8754659E1B3D73B0009F9A14 /* Pinterest+Fix.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +343,9 @@
 			files = (
 				87D0B7741B39D2050093F509 /* RAC+Swift.swift in Sources */,
 				87D0B7661B39A4E70093F509 /* Cher.swift in Sources */,
+				8754659C1B3D72A8009F9A14 /* Pinterest+Fix.m in Sources */,
 				8702537C1B3B0F88009CDB15 /* PreviewComposeViewController.swift in Sources */,
+				8718F3661B3C4A260080BA71 /* Cher+Instagram.swift in Sources */,
 				8702530F1B3AF015009CDB15 /* Cher+Pinterest.swift in Sources */,
 				8718F3621B3C23760080BA71 /* WebThumbnail.swift in Sources */,
 				87D0B76B1B39BE2D0093F509 /* Cher+Native.swift in Sources */,
@@ -465,6 +481,7 @@
 				);
 				INFOPLIST_FILE = Cher/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -492,6 +509,7 @@
 				);
 				INFOPLIST_FILE = Cher/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

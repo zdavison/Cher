@@ -9,6 +9,14 @@
 import Foundation
 import ReactiveCocoa
 
+public let kCherErrorDomain = "com.thingsdoer.cher"
+
+internal enum ErrorCode : Int{
+  case BadData   = 400
+  case User      = 418
+  case NotFound  = 404
+}
+
 private extension String {
   func findURLs() -> [NSURL] {
     var error: NSError?
@@ -44,53 +52,31 @@ public class Item {
     self.image = image
     self.URLs  = text?.findURLs() ?? []
   }
-  
-  public func via(flow: Flow) -> RACSignal {
-    return flow.share(self)
-  }
-  
-  public func to
-    <D: Destination, I: Interface where D.Input == I.Output>
-    (destination: D, using interface: I) -> RACSignal {
-    return interface.present(self).flattenMap{
-      (object: AnyObject!) -> RACStream! in
-      return destination.share(object as! D.Input) ?? RACSignal.empty()
-    }
-  }
-  
-  public func to
-    <D: Destination where D.Input == Item>
-    (destination: D) -> RACSignal{
-      return destination.share(self)
-  }
-}
-
-//MARK: Destination
-public protocol Destination {
-  typealias Input
-  func share(input: Input) -> RACSignal // Completed | Error
-}
-
-//MARK: Interface
-public protocol Interface {
-  typealias Output
-  func present(item: Item) -> RACSignal //RACSignal<Output> | Error
 }
 
 // MARK: Flow
 public protocol Flow {
-  func share(item: Item) -> RACSignal // Completed | Error
+  typealias Input
+  func share(item: Input) -> RACSignal // Completed | Error
 }
 
 //MARK: Cher
 public class Cher {
-  public class func url(urlString: String) -> Item {
-    return Item(text: urlString)
+  
+  // Sharing with Flows
+  public class func url<F: Flow where F.Input == Item>(urlString: String, via: F) -> RACSignal {
+    let item = Item(text: urlString)
+    return via.share(item)
   }
-  public class func text(text: String) -> Item {
-    return Item(text: text)
+  public class func text<F: Flow where F.Input == Item>(text: String, via: F) -> RACSignal {
+    let item = Item(text: text)
+    return via.share(item)
   }
-  public class func image(image: UIImage) -> Item {
-    return Item(text: nil, image: image)
+  public class func image<F: Flow where F.Input == Item>(image: UIImage, via: F) -> RACSignal {
+    let item = Item(image: image)
+    return via.share(item)
+  }
+  public class func item<I: Item, F: Flow where F.Input == I>(item: I, via: F) -> RACSignal {
+    return via.share(item)
   }
 }
