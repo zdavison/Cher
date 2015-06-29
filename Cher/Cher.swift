@@ -47,10 +47,10 @@ public class Item {
   public let image:      UIImage?
   public let URLs:       [NSURL]
   
-  public init(text: String? = nil, image: UIImage? = nil){
+  public init(text: String? = nil, image: UIImage? = nil, urls: [NSURL]? = nil){
     self.text  = text
     self.image = image
-    self.URLs  = text?.findURLs() ?? []
+    self.URLs  = urls ?? text?.findURLs() ?? []
   }
 }
 

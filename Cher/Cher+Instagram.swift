@@ -60,5 +60,6 @@ public class InstagramFlow : NSObject, Flow {
       
       return disposable
     }
+    .replayLast()
   }
 }

@@ -11,6 +11,7 @@ import Foundation
 extension UIViewController {
   
   func presentViewControllerFromVisibleViewController(viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)?) {
+    NSLog("\(self)")
     if let navigationController = self as? UINavigationController {
       navigationController.topViewController.presentViewControllerFromVisibleViewController(viewControllerToPresent, animated: true, completion: nil)
     } else if (presentedViewController != nil) {

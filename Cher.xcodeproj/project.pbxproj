@@ -29,7 +29,7 @@
 		87D0B76F1B39C1100093F509 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87D0B7601B39A2FC0093F509 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87D0B7741B39D2050093F509 /* RAC+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B7731B39D2050093F509 /* RAC+Swift.swift */; };
 		87D0B7751B39DC760093F509 /* RAC+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B7731B39D2050093F509 /* RAC+Swift.swift */; };
-		87DC93511B417A4800CADE93 /* UIViewController+UniversalPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC93501B417A4800CADE93 /* UIViewController+UniversalPresentation.swift */; };
+		87DC936C1B418FDA00CADE93 /* UIViewController+UniversalPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC936B1B418FDA00CADE93 /* UIViewController+UniversalPresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +81,7 @@
 		87D0B7671B39A6F20093F509 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 		87D0B76A1B39BE2D0093F509 /* Cher+Native.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cher+Native.swift"; sourceTree = "<group>"; };
 		87D0B7731B39D2050093F509 /* RAC+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RAC+Swift.swift"; sourceTree = "<group>"; };
-		87DC93501B417A4800CADE93 /* UIViewController+UniversalPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UniversalPresentation.swift"; sourceTree = "<group>"; };
+		87DC936B1B418FDA00CADE93 /* UIViewController+UniversalPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UniversalPresentation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +167,7 @@
 		87D0B7421B39A1550093F509 /* Cher */ = {
 			isa = PBXGroup;
 			children = (
-				87DC934D1B417A2C00CADE93 /* Extensions */,
+				87DC93681B418FC400CADE93 /* Extensions */,
 				870253791B3B0E88009CDB15 /* UI */,
 				87D0B7451B39A1550093F509 /* Cher.h */,
 				87D0B7651B39A4E70093F509 /* Cher.swift */,
@@ -233,26 +233,26 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		87DC934D1B417A2C00CADE93 /* Extensions */ = {
+		87DC93681B418FC400CADE93 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				87DC934E1B417A3100CADE93 /* Apple */,
+				87DC93691B418FC700CADE93 /* Apple */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		87DC934E1B417A3100CADE93 /* Apple */ = {
+		87DC93691B418FC700CADE93 /* Apple */ = {
 			isa = PBXGroup;
 			children = (
-				87DC934F1B417A3700CADE93 /* UIKit */,
+				87DC936A1B418FCF00CADE93 /* UIKit */,
 			);
 			name = Apple;
 			sourceTree = "<group>";
 		};
-		87DC934F1B417A3700CADE93 /* UIKit */ = {
+		87DC936A1B418FCF00CADE93 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				87DC93501B417A4800CADE93 /* UIViewController+UniversalPresentation.swift */,
+				87DC936B1B418FDA00CADE93 /* UIViewController+UniversalPresentation.swift */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -376,7 +376,7 @@
 				8702530F1B3AF015009CDB15 /* Cher+Pinterest.swift in Sources */,
 				8718F3621B3C23760080BA71 /* WebThumbnail.swift in Sources */,
 				87D0B76B1B39BE2D0093F509 /* Cher+Native.swift in Sources */,
-				87DC93511B417A4800CADE93 /* UIViewController+UniversalPresentation.swift in Sources */,
+				87DC936C1B418FDA00CADE93 /* UIViewController+UniversalPresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

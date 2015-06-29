@@ -31,11 +31,20 @@ public class PinterestFlow : Flow {
   
   public func share(item: PinterestItem) -> RACSignal {
     
-    _pinterest.createPinWithImageURL(
-      item.imageURL,
-      sourceURL: item.sourceURL,
-      description: item.text)
-    
-    return RACSignal.empty()
+    return RACSignal.createSignal{
+      (subscriber) in
+      
+      let disposable = RACDisposable()
+      
+      self._pinterest.createPinWithImageURL(
+        item.imageURL,
+        sourceURL: item.sourceURL,
+        description: item.text)
+      
+      subscriber.sendCompleted()
+      
+      return disposable
+    }
+    .replayLast()
   }
 }

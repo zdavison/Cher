@@ -32,20 +32,19 @@ public class TwitterFlow : NativeFlow {
 // MARK: Native
 public class NativeFlow : Flow {
   
-  private let _serviceType: String
+  private let _composeViewController: SLComposeViewController
   
   private init(serviceType: String){
-    self._serviceType = serviceType
+    self._composeViewController = SLComposeViewController(forServiceType: serviceType)
+    self._composeViewController.loadView()
   }
   
   public func share(item: Item) -> RACSignal {
     
-    let serviceType = _serviceType
+    let composeViewController = _composeViewController
     
     return RACSignal.createSignal({
       (subscriber: RACSubscriber!) -> RACDisposable! in
-      
-      let composeViewController = SLComposeViewController(forServiceType: serviceType)
       
       var rootViewController = UIApplication.sharedApplication().keyWindow?.rootViewController
       
@@ -79,5 +78,6 @@ public class NativeFlow : Flow {
         composeViewController.parentViewController?.dismissViewControllerAnimated(true, completion: nil)
       }
     })
+    .replayLast()
   }
 }
