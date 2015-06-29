@@ -46,7 +46,8 @@ public class NativeFlow : Flow {
       (subscriber: RACSubscriber!) -> RACDisposable! in
       
       let composeViewController = SLComposeViewController(forServiceType: serviceType)
-      let rootViewController = UIApplication.sharedApplication().keyWindow?.rootViewController
+      
+      var rootViewController = UIApplication.sharedApplication().keyWindow?.rootViewController
       
       // Configure the composeViewController
       if let text = item.text {
@@ -54,6 +55,9 @@ public class NativeFlow : Flow {
       }
       if let image = item.image {
         composeViewController.addImage(image)
+      }
+      if let url = item.URLs.first {
+        composeViewController.addURL(url)
       }
       
       // Set our completion handler
@@ -69,7 +73,7 @@ public class NativeFlow : Flow {
       }
       
       // Present
-      rootViewController?.presentViewController(composeViewController, animated: true, completion: nil)
+      rootViewController?.presentViewControllerFromVisibleViewController(composeViewController, animated: true, completion: nil)
       
       return RACDisposable(){
         composeViewController.parentViewController?.dismissViewControllerAnimated(true, completion: nil)
