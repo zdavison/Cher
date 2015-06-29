@@ -62,14 +62,3 @@ public class InstagramFlow : NSObject, Flow {
     }
   }
 }
-
-extension InstagramFlow : UIDocumentInteractionControllerDelegate {
-
-  public func documentInteractionControllerDidDismissOpenInMenu(controller: UIDocumentInteractionController) {
-    
-  }
-  
-  public func documentInteractionController(controller: UIDocumentInteractionController, willBeginSendingToApplication application: String) {
-    
-  }
-}
