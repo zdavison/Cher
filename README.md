@@ -5,6 +5,14 @@ Reactive Swift social sharing, covered by Cher. (Still alpha)
 
 You should be familiar with [ReactiveCocoa](http://github.com/reactivecocoa/reactivecocoa) before reading.
 
+# Goals
+
+- One line sharing.
+- Unified sharing API eg: `Service.share(item)`
+- Extensible.
+- Consistent UX where possible.
+- Compile time enforcement of compatability / requirements per service.
+
 # Sharing
 
 Cher supports sharing via `Flow`s, which are entirely self contained UI/Logic components that perform editing and sharing themselves.
