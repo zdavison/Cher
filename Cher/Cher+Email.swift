@@ -12,6 +12,8 @@ import MessageUI
 
 public class EmailFlow : NSObject, Flow {
   
+  public typealias Input = String
+  
   private static var _currentInstance: EmailFlow?
   
   private let _subject = RACSubject()
@@ -21,21 +23,16 @@ public class EmailFlow : NSObject, Flow {
     EmailFlow._currentInstance = self
   }
   
-  deinit{
-    NSLog("deinit")
-  }
-  
   public static func available() -> Bool {
     return MFMailComposeViewController.canSendMail()
   }
   
-  typealias Input = Item
-  public func share(item: Item) -> RACSignal {
+  public func share(item: Input) -> RACSignal {
     
     let composeViewController = MFMailComposeViewController()
     composeViewController.mailComposeDelegate = self
     composeViewController.setSubject("Check out this cool recipe from Drop.")
-    composeViewController.setMessageBody(item.text, isHTML: false)
+    composeViewController.setMessageBody(item, isHTML: false)
     composeViewController.present()
     
     return _subject

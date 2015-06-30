@@ -24,7 +24,15 @@ private func _saveImage(image: UIImage) -> NSURL? {
 
 public class InstagramFlow : NSObject, Flow {
   
-  typealias Input = Item
+  public struct Input {
+    let image:    UIImage
+    let caption:  String?
+    
+    public init(image: UIImage, caption: String){
+      self.image    = image
+      self.caption  = caption
+    }
+  }
   
   private static var _currentInstance: InstagramFlow?
   
@@ -42,19 +50,14 @@ public class InstagramFlow : NSObject, Flow {
     return true
   }
   
-  public func share(item: Item) -> RACSignal {
+  public func share(item: Input) -> RACSignal {
     
-    if item.image == nil{
-      let error = NSError(domain: kCherErrorDomain, code: ErrorCode.BadData.rawValue, userInfo: [NSLocalizedDescriptionKey: "Instagram sharing requires an image in \(item)."])
-      return RACSignal.error(error)
-    }
-    
-    let url = _saveImage(item.image!)!
+    let url = _saveImage(item.image)!
     let documentInteractionController = UIDocumentInteractionController()
     documentInteractionController.delegate = self
     documentInteractionController.URL = url
     documentInteractionController.UTI = "com.instagram.photo"
-    if let text = item.text {
+    if let text = item.caption {
       documentInteractionController.annotation = ["InstagramCaption" : text]
     }
     

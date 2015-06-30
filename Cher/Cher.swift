@@ -63,24 +63,3 @@ public protocol Flow {
   
   func share(item: Input) -> RACSignal // Completed | Error
 }
-
-//MARK: Cher
-public class Cher {
-  
-  // Sharing with Flows
-  public class func url<F: Flow where F.Input == Item>(urlString: String, via: F) -> RACSignal {
-    let item = Item(text: urlString)
-    return via.share(item)
-  }
-  public class func text<F: Flow where F.Input == Item>(text: String, via: F) -> RACSignal {
-    let item = Item(text: text)
-    return via.share(item)
-  }
-  public class func image<F: Flow where F.Input == Item>(image: UIImage, via: F) -> RACSignal {
-    let item = Item(image: image)
-    return via.share(item)
-  }
-  public class func item<I: Item, F: Flow where F.Input == I>(item: I, via: F) -> RACSignal {
-    return via.share(item)
-  }
-}

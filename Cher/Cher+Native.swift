@@ -32,6 +32,8 @@ public class TwitterFlow : NativeFlow {
 // MARK: Native
 public class NativeFlow : Flow {
   
+  public typealias Input = Item
+  
   public static func available() -> Bool {
     return true
   }

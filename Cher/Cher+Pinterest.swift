@@ -9,19 +9,19 @@
 import Foundation
 import ReactiveCocoa
 
-public class PinterestItem : Item {
-  
-  public let imageURL:  NSURL
-  public let sourceURL: NSURL
-  
-  public init(text: String?, imageURLString: String, sourceURLString: String) {
-    self.imageURL  = NSURL(string: imageURLString)!
-    self.sourceURL = NSURL(string: sourceURLString)!
-    super.init(text: text, image: nil)
-  }
-}
-
 public class PinterestFlow : Flow {
+  
+  public struct Input {
+    let imageURL:   NSURL
+    let sourceURL:  NSURL
+    let text:       String
+    
+    public init(imageURL: NSURL, sourceURL: NSURL, text: String){
+      self.imageURL   = imageURL
+      self.sourceURL  = sourceURL
+      self.text       = text
+    }
+  }
   
   private let _pinterest: Pinterest
   
@@ -33,7 +33,7 @@ public class PinterestFlow : Flow {
     return true
   }
   
-  public func share(item: PinterestItem) -> RACSignal {
+  public func share(item: Input) -> RACSignal {
     
     return RACSignal.createSignal{
       (subscriber) in
