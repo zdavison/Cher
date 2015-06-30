@@ -61,7 +61,7 @@ public class InstagramFlow : NSObject, Flow {
       documentInteractionController.annotation = ["InstagramCaption" : text]
     }
     
-    let frame  = self._sender.superview!.convertRect(self._sender.bounds, toView: nil)
+    let frame  = self._sender.superview!.convertRect(self._sender.frame, toView: nil)
     documentInteractionController.presentOpenInMenuFromRect(frame, inView: self._sender.superview!, animated: true)
     
     // Need to hold onto this or it'll get de-allocated and we'll crash out
@@ -72,7 +72,7 @@ public class InstagramFlow : NSObject, Flow {
 }
 
 extension InstagramFlow : UIDocumentInteractionControllerDelegate {
-  public func documentInteractionController(controller: UIDocumentInteractionController, willBeginSendingToApplication application: String) {
+  public func documentInteractionControllerDidDismissOpenInMenu(controller: UIDocumentInteractionController) {
     _subject.sendCompleted()
   }
 }
