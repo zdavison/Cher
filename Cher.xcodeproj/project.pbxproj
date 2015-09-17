@@ -15,14 +15,8 @@
 		87D0B7461B39A1550093F509 /* Cher.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D0B7451B39A1550093F509 /* Cher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87D0B74C1B39A1550093F509 /* Cher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D0B7401B39A1550093F509 /* Cher.framework */; };
 		87D0B7531B39A1550093F509 /* CherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B7521B39A1550093F509 /* CherTests.swift */; };
-		87D0B7631B39A30C0093F509 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D0B75F1B39A2FC0093F509 /* Nimble.framework */; };
-		87D0B7641B39A30C0093F509 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D0B7601B39A2FC0093F509 /* Quick.framework */; };
 		87D0B7661B39A4E70093F509 /* Cher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B7651B39A4E70093F509 /* Cher.swift */; };
-		87D0B7681B39A6F20093F509 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D0B7671B39A6F20093F509 /* ReactiveCocoa.framework */; };
 		87D0B76B1B39BE2D0093F509 /* Cher+Native.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B76A1B39BE2D0093F509 /* Cher+Native.swift */; };
-		87D0B76D1B39C0F90093F509 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87D0B7671B39A6F20093F509 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		87D0B76E1B39C1100093F509 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87D0B75F1B39A2FC0093F509 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		87D0B76F1B39C1100093F509 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87D0B7601B39A2FC0093F509 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87D0B7741B39D2050093F509 /* RAC+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B7731B39D2050093F509 /* RAC+Swift.swift */; };
 		87D0B7751B39DC760093F509 /* RAC+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B7731B39D2050093F509 /* RAC+Swift.swift */; };
 		87DC936C1B418FDA00CADE93 /* UIViewController+UniversalPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC936B1B418FDA00CADE93 /* UIViewController+UniversalPresentation.swift */; };
@@ -45,9 +39,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				87D0B76E1B39C1100093F509 /* Nimble.framework in CopyFiles */,
-				87D0B76F1B39C1100093F509 /* Quick.framework in CopyFiles */,
-				87D0B76D1B39C0F90093F509 /* ReactiveCocoa.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,10 +58,7 @@
 		87D0B74B1B39A1550093F509 /* CherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D0B7511B39A1550093F509 /* CherTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CherTests.plist; sourceTree = "<group>"; };
 		87D0B7521B39A1550093F509 /* CherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CherTests.swift; sourceTree = "<group>"; };
-		87D0B75F1B39A2FC0093F509 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
-		87D0B7601B39A2FC0093F509 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 		87D0B7651B39A4E70093F509 /* Cher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cher.swift; sourceTree = "<group>"; };
-		87D0B7671B39A6F20093F509 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 		87D0B76A1B39BE2D0093F509 /* Cher+Native.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cher+Native.swift"; sourceTree = "<group>"; };
 		87D0B7731B39D2050093F509 /* RAC+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RAC+Swift.swift"; sourceTree = "<group>"; };
 		87DC936B1B418FDA00CADE93 /* UIViewController+UniversalPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UniversalPresentation.swift"; sourceTree = "<group>"; };
@@ -81,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87D0B7681B39A6F20093F509 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +77,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				87D0B74C1B39A1550093F509 /* Cher.framework in Frameworks */,
-				87D0B7631B39A30C0093F509 /* Nimble.framework in Frameworks */,
-				87D0B7641B39A30C0093F509 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +95,6 @@
 		87D0B7361B39A1550093F509 = {
 			isa = PBXGroup;
 			children = (
-				87D0B75C1B39A2FC0093F509 /* Carthage */,
 				87D0B7421B39A1550093F509 /* Cher */,
 				87D0B74F1B39A1550093F509 /* CherTests */,
 				87D0B7411B39A1550093F509 /* Products */,
@@ -168,32 +152,6 @@
 				87D0B7511B39A1550093F509 /* CherTests.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		87D0B75C1B39A2FC0093F509 /* Carthage */ = {
-			isa = PBXGroup;
-			children = (
-				87D0B75D1B39A2FC0093F509 /* Build */,
-			);
-			path = Carthage;
-			sourceTree = "<group>";
-		};
-		87D0B75D1B39A2FC0093F509 /* Build */ = {
-			isa = PBXGroup;
-			children = (
-				87D0B75E1B39A2FC0093F509 /* iOS */,
-			);
-			path = Build;
-			sourceTree = "<group>";
-		};
-		87D0B75E1B39A2FC0093F509 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				87D0B7671B39A6F20093F509 /* ReactiveCocoa.framework */,
-				87D0B75F1B39A2FC0093F509 /* Nimble.framework */,
-				87D0B7601B39A2FC0093F509 /* Quick.framework */,
-			);
-			path = iOS;
 			sourceTree = "<group>";
 		};
 		87DC93681B418FC400CADE93 /* Extensions */ = {
