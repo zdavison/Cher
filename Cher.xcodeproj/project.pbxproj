@@ -11,6 +11,11 @@
 		8702537C1B3B0F88009CDB15 /* PreviewComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702537A1B3B0EB3009CDB15 /* PreviewComposeViewController.swift */; };
 		8718F3621B3C23760080BA71 /* WebThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718F3611B3C23760080BA71 /* WebThumbnail.swift */; };
 		8718F3661B3C4A260080BA71 /* Cher+Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718F3651B3C4A260080BA71 /* Cher+Instagram.swift */; };
+		874D53B61BAB0A2200335D7F /* Pinterest+Fix.h in Headers */ = {isa = PBXBuildFile; fileRef = 874D53B01BAB0A2200335D7F /* Pinterest+Fix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		874D53B71BAB0A2200335D7F /* Pinterest+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = 874D53B11BAB0A2200335D7F /* Pinterest+Fix.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		874D53B81BAB0A2200335D7F /* Pinterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 874D53B31BAB0A2200335D7F /* Pinterest.framework */; };
+		874D53B91BAB0A2200335D7F /* PinterestSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 874D53B51BAB0A2200335D7F /* PinterestSDKResources.bundle */; };
+		874D53BD1BAB0B6300335D7F /* _Pinterest.h in Headers */ = {isa = PBXBuildFile; fileRef = 874D53BC1BAB0B6300335D7F /* _Pinterest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87B861AD1B41A03700AAB6EF /* Cher+Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B861AC1B41A03700AAB6EF /* Cher+Email.swift */; };
 		87D0B7461B39A1550093F509 /* Cher.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D0B7451B39A1550093F509 /* Cher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87D0B74C1B39A1550093F509 /* Cher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D0B7401B39A1550093F509 /* Cher.framework */; };
@@ -20,6 +25,7 @@
 		87D0B7741B39D2050093F509 /* RAC+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B7731B39D2050093F509 /* RAC+Swift.swift */; };
 		87D0B7751B39DC760093F509 /* RAC+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B7731B39D2050093F509 /* RAC+Swift.swift */; };
 		87DC936C1B418FDA00CADE93 /* UIViewController+UniversalPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC936B1B418FDA00CADE93 /* UIViewController+UniversalPresentation.swift */; };
+		FC8980CBE1ED0003393FBCDF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14DD5C04382BCBDD9F2CF08 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +51,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B16F993DF062D708463898F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8702530E1B3AF015009CDB15 /* Cher+Pinterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cher+Pinterest.swift"; sourceTree = "<group>"; };
 		8702537A1B3B0EB3009CDB15 /* PreviewComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewComposeViewController.swift; sourceTree = "<group>"; };
 		8718F3611B3C23760080BA71 /* WebThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebThumbnail.swift; sourceTree = "<group>"; };
 		8718F3651B3C4A260080BA71 /* Cher+Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cher+Instagram.swift"; sourceTree = "<group>"; };
+		874D53B01BAB0A2200335D7F /* Pinterest+Fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pinterest+Fix.h"; sourceTree = "<group>"; };
+		874D53B11BAB0A2200335D7F /* Pinterest+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pinterest+Fix.m"; sourceTree = "<group>"; };
+		874D53B31BAB0A2200335D7F /* Pinterest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pinterest.framework; sourceTree = "<group>"; };
+		874D53B51BAB0A2200335D7F /* PinterestSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PinterestSDKResources.bundle; sourceTree = "<group>"; };
+		874D53BC1BAB0B6300335D7F /* _Pinterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Pinterest.h; sourceTree = "<group>"; };
 		8754659F1B3D90AE009F9A14 /* Cher+Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cher+Destination.swift"; sourceTree = "<group>"; };
 		875465A31B3D9239009F9A14 /* CherDisabledTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CherDisabledTests.swift; sourceTree = "<group>"; };
 		87B861AC1B41A03700AAB6EF /* Cher+Email.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cher+Email.swift"; sourceTree = "<group>"; };
@@ -62,6 +74,8 @@
 		87D0B76A1B39BE2D0093F509 /* Cher+Native.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cher+Native.swift"; sourceTree = "<group>"; };
 		87D0B7731B39D2050093F509 /* RAC+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RAC+Swift.swift"; sourceTree = "<group>"; };
 		87DC936B1B418FDA00CADE93 /* UIViewController+UniversalPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UniversalPresentation.swift"; sourceTree = "<group>"; };
+		88CFD6C8E7C4EBD854EF3D38 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A14DD5C04382BCBDD9F2CF08 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8980CBE1ED0003393FBCDF /* Pods.framework in Frameworks */,
+				874D53B81BAB0A2200335D7F /* Pinterest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3552AE887BDF0005FC2159D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B16F993DF062D708463898F /* Pods.debug.xcconfig */,
+				88CFD6C8E7C4EBD854EF3D38 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		38F60C67CF3B7E1A6E4E0986 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A14DD5C04382BCBDD9F2CF08 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		870253791B3B0E88009CDB15 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,12 +125,43 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
+		874D53AF1BAB0A2200335D7F /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				874D53BC1BAB0B6300335D7F /* _Pinterest.h */,
+				874D53B01BAB0A2200335D7F /* Pinterest+Fix.h */,
+				874D53B11BAB0A2200335D7F /* Pinterest+Fix.m */,
+				874D53B21BAB0A2200335D7F /* Pinterest.embeddedframework */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		874D53B21BAB0A2200335D7F /* Pinterest.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				874D53B31BAB0A2200335D7F /* Pinterest.framework */,
+				874D53B41BAB0A2200335D7F /* Resources */,
+			);
+			path = Pinterest.embeddedframework;
+			sourceTree = "<group>";
+		};
+		874D53B41BAB0A2200335D7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				874D53B51BAB0A2200335D7F /* PinterestSDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		87D0B7361B39A1550093F509 = {
 			isa = PBXGroup;
 			children = (
+				874D53AF1BAB0A2200335D7F /* Vendor */,
 				87D0B7421B39A1550093F509 /* Cher */,
 				87D0B74F1B39A1550093F509 /* CherTests */,
 				87D0B7411B39A1550093F509 /* Products */,
+				3552AE887BDF0005FC2159D3 /* Pods */,
+				38F60C67CF3B7E1A6E4E0986 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				87D0B7461B39A1550093F509 /* Cher.h in Headers */,
+				874D53BD1BAB0B6300335D7F /* _Pinterest.h in Headers */,
+				874D53B61BAB0A2200335D7F /* Pinterest+Fix.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,10 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87D0B7561B39A1550093F509 /* Build configuration list for PBXNativeTarget "Cher" */;
 			buildPhases = (
+				E624CE65A0AABE6C005DC774 /* Check Pods Manifest.lock */,
 				87D0B73B1B39A1550093F509 /* Sources */,
 				87D0B73C1B39A1550093F509 /* Frameworks */,
 				87D0B73D1B39A1550093F509 /* Headers */,
 				87D0B73E1B39A1550093F509 /* Resources */,
+				0645FB77600C79E684862E0D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874D53B91BAB0A2200335D7F /* PinterestSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +350,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0645FB77600C79E684862E0D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E624CE65A0AABE6C005DC774 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87D0B73B1B39A1550093F509 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -292,6 +394,7 @@
 				8718F3661B3C4A260080BA71 /* Cher+Instagram.swift in Sources */,
 				8702530F1B3AF015009CDB15 /* Cher+Pinterest.swift in Sources */,
 				8718F3621B3C23760080BA71 /* WebThumbnail.swift in Sources */,
+				874D53B71BAB0A2200335D7F /* Pinterest+Fix.m in Sources */,
 				87D0B76B1B39BE2D0093F509 /* Cher+Native.swift in Sources */,
 				87B861AD1B41A03700AAB6EF /* Cher+Email.swift in Sources */,
 				87DC936C1B418FDA00CADE93 /* UIViewController+UniversalPresentation.swift in Sources */,
@@ -409,6 +512,7 @@
 		};
 		87D0B7571B39A1550093F509 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B16F993DF062D708463898F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -420,6 +524,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Vendor",
 					"$(PROJECT_DIR)/Vendor/Pinterest.embeddedframework",
+					"$(PROJECT_DIR)/Pinterest.embeddedframework",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -437,6 +542,7 @@
 		};
 		87D0B7581B39A1550093F509 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88CFD6C8E7C4EBD854EF3D38 /* Pods.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -448,6 +554,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Vendor",
 					"$(PROJECT_DIR)/Vendor/Pinterest.embeddedframework",
+					"$(PROJECT_DIR)/Pinterest.embeddedframework",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
